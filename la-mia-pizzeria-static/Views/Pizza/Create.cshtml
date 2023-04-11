@@ -21,9 +21,10 @@
 
     <div class="form-group">
         <label asp-for="Prezzo">Prezzo:</label>
-        <input asp-for="Prezzo" class="form-control" />
+        <input type="number" step="0.5" asp-for="Prezzo" class="form-control" />
         <span asp-validation-for="Prezzo" class="text-danger"></span>
     </div>
+
     <div class="text-center my-3">
         <button type="submit" class="btn btn-primary">Crea</button>
     </div>

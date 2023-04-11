@@ -19,8 +19,8 @@ namespace la_mia_pizzeria_static.Models
         public string? Descrizione { get; set; }
 
         [Required(ErrorMessage = "Il campo Prezzo è obbligatorio")]
-        [Range(0.01, 99.99, ErrorMessage = "Il prezzo deve essere maggiore di zero")]
-        public decimal Prezzo { get; set; }
+        [Range(0.01, 999.99, ErrorMessage = "Il prezzo deve essere maggiore di zero")]
+        public decimal? Prezzo { get; set; }
     }
 }
 
