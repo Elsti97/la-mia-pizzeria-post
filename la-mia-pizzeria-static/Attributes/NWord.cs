@@ -1,11 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 namespace la_mia_pizzeria_static.Attributes;
 
-public class NWord : ValidationAttribute
+public class NWordAttribute : ValidationAttribute
 {
     int wordCount;
 
-    public NWord(int wordCount)
+    public NWordAttribute(int wordCount)
     {
         this.wordCount = wordCount;
     }
